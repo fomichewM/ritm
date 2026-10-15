@@ -34,7 +34,7 @@ from psycopg.rows import dict_row
 from psycopg_pool import ConnectionPool
 from pydantic import BaseModel, ConfigDict, Field, field_validator
 
-from app.chat import Apns, Hub, later, preview
+from app.chat import Apns, Hub, later
 
 # ───────────────────────── настройки ─────────────────────────
 
@@ -785,8 +785,9 @@ h1{{font-size:26px;margin:0 0 8px}}p,li{{color:#A7ADB5}}b{{color:#F2F4F6}}.code{
             "AND m.team_id=%s WHERE d.user_id<>%s AND NOT EXISTS (SELECT 1 FROM team_mutes x "
             "WHERE x.team_id=%s AND x.user_id=d.user_id)", (tid, u["id"], tid)).fetchall()
             if d["user_id"] not in online]
-        name = u["display_name"] or "Участник"
-        await later(app.state.apns.send(devs, f"{t['emoji']} {t['name']}", f"{name}: {preview(body.text)}",
+        # 152-ФЗ (ст. 12): пуш идёт через серверы Apple за рубежом — в нём ни имени,
+        # ни текста, только название команды (решение юр. разбора B6).
+        await later(app.state.apns.send(devs, f"{t['emoji']} {t['name']}", "Новое сообщение в чате команды",
                                         {"team_id": tid, "message_id": out["id"]}))
         return out
 

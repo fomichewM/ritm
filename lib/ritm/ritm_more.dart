@@ -17,7 +17,8 @@ import 'package:provider/provider.dart';
 import '../coach/coach_config.dart';
 import '../platform/app_icon.dart';
 import '../state/app_state.dart';
-import '../ui2/community_links.dart' show kGithubUrl, open3rdPartyLink;
+import '../ui2/community_links.dart' show open3rdPartyLink;
+
 import '../ui2/profile/alarm.dart' show AlarmScreen;
 import '../ui2/profile/band_notifications.dart' show BandNotifications;
 import '../ui2/profile/data.dart' show DataScreen;
@@ -46,6 +47,9 @@ import 'ritm_hk_debug.dart' show RitmHkCheckScreen;
 import 'ritm_whoop_csv.dart' show WhoopCycle, WhoopExport, dayId;
 import 'ritm_whoop_ui.dart' show RitmWhoopCompareScreen, ritmDemoWhoopCompare;
 import 'ritm_ui.dart';
+
+/// Открытый репозиторий «Ритма» (AGPL-3.0, B6).
+const kRitmRepoUrl = 'https://github.com/fomichewM/ritm';
 
 class RitmMoreScreen extends StatefulWidget {
   const RitmMoreScreen({super.key});
@@ -852,15 +856,15 @@ class RitmAboutScreen extends StatelessWidget {
       ),
       const SizedBox(height: RS.cardGap),
       RCard(
-        onTap: () => open3rdPartyLink(kGithubUrl),
+        onTap: () => open3rdPartyLink(kRitmRepoUrl),
         child: const Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             RCardHead('Исходный код и лицензия'),
             SizedBox(height: 8),
             Text(
-              'AGPL-3.0, основано на OpenStrap Edge. Исходный код изменений '
-              '«Ритма» предоставляется каждому получателю сборки по запросу.',
+              'AGPL-3.0, форк OpenStrap Edge. Исходный код «Ритма» открыт: '
+              'github.com/fomichewM/ritm',
               style: RT.body,
             ),
           ],

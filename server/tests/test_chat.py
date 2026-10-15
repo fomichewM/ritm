@@ -84,7 +84,8 @@ def test_push_only_to_closed_chat_and_not_muted(client):
         ws.receive_json()
         time.sleep(.2)
     assert [p["token"] for p in apns.sent] == ["cccccc"]
-    assert apns.sent[0]["title"] == "🏃 Друзья" and apns.sent[0]["body"] == "Миша: Кто на пробежку?"
+    assert apns.sent[0]["title"] == "🏃 Друзья" and apns.sent[0]["body"] == "Новое сообщение в чате команды"
+    assert all("Миша" not in p["body"] and "пробежку" not in p["body"] for p in apns.sent)
     # Оля выключила пуши этой команды → ей не приходит; Женя закрыл чат → приходит.
     assert client.put(f"/teams/{tid}/mute", json={"muted": True}, headers=c3).json() == {"muted": True}
     apns.sent.clear()
