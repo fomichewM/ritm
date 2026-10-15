@@ -1,0 +1,523 @@
+{
+ "align_fail": 1,
+ "clean_days": 87,
+ "metrics": {
+  "awake": {
+   "all": {
+    "bias": 0.0,
+    "mae": 0.0,
+    "median": 0.0,
+    "n": 87,
+    "r": 1.0,
+    "share": null
+   },
+   "calib": {
+    "bias": 0.0,
+    "mae": 0.0,
+    "median": 0.0,
+    "n": 58,
+    "r": 1.0,
+    "share": null
+   },
+   "pass_": true,
+   "valid": {
+    "bias": 0.0,
+    "mae": 0.0,
+    "median": 0.0,
+    "n": 29,
+    "r": 1.0,
+    "share": null
+   }
+  },
+  "consistency": {
+   "all": {
+    "bias": -0.644,
+    "mae": 9.632,
+    "median": -1.0,
+    "n": 87,
+    "r": -0.178,
+    "share": null
+   },
+   "calib": {
+    "bias": -1.414,
+    "mae": 10.655,
+    "median": -3.0,
+    "n": 58,
+    "r": -0.226,
+    "share": null
+   },
+   "pass_": false,
+   "valid": {
+    "bias": 0.897,
+    "mae": 7.586,
+    "median": 0.0,
+    "n": 29,
+    "r": -0.037,
+    "share": null
+   }
+  },
+  "debt": {
+   "all": {
+    "bias": -0.218,
+    "mae": 6.931,
+    "median": 0.0,
+    "n": 87,
+    "r": 0.807,
+    "share": null
+   },
+   "calib": {
+    "bias": -0.121,
+    "mae": 6.983,
+    "median": 0.0,
+    "n": 58,
+    "r": 0.809,
+    "share": null
+   },
+   "pass_": true,
+   "valid": {
+    "bias": -0.414,
+    "mae": 6.828,
+    "median": -2.0,
+    "n": 29,
+    "r": 0.804,
+    "share": null
+   }
+  },
+  "deep": {
+   "all": {
+    "bias": 11.092,
+    "mae": 15.897,
+    "median": 13.0,
+    "n": 87,
+    "r": 0.581,
+    "share": null
+   },
+   "calib": {
+    "bias": 7.862,
+    "mae": 14.517,
+    "median": 10.5,
+    "n": 58,
+    "r": 0.605,
+    "share": null
+   },
+   "pass_": false,
+   "valid": {
+    "bias": 17.552,
+    "mae": 18.655,
+    "median": 17.0,
+    "n": 29,
+    "r": 0.633,
+    "share": null
+   }
+  },
+  "eff": {
+   "all": {
+    "bias": -0.099,
+    "mae": 1.251,
+    "median": -0.1,
+    "n": 87,
+    "r": 0.87,
+    "share": null
+   },
+   "calib": {
+    "bias": -0.164,
+    "mae": 1.24,
+    "median": -0.15,
+    "n": 58,
+    "r": 0.889,
+    "share": null
+   },
+   "pass_": true,
+   "valid": {
+    "bias": 0.031,
+    "mae": 1.272,
+    "median": 0.0,
+    "n": 29,
+    "r": 0.826,
+    "share": null
+   }
+  },
+  "hrv": {
+   "all": {
+    "bias": 1.569,
+    "mae": 4.111,
+    "median": 1.5,
+    "n": 87,
+    "r": 0.884,
+    "share": 0.954
+   },
+   "calib": {
+    "bias": 1.312,
+    "mae": 4.381,
+    "median": 1.4,
+    "n": 58,
+    "r": 0.871,
+    "share": 0.948
+   },
+   "pass_": true,
+   "valid": {
+    "bias": 2.083,
+    "mae": 3.572,
+    "median": 1.8,
+    "n": 29,
+    "r": 0.911,
+    "share": 0.966
+   }
+  },
+  "in_bed": {
+   "all": {
+    "bias": 0.0,
+    "mae": 0.0,
+    "median": 0.0,
+    "n": 87,
+    "r": 1.0,
+    "share": null
+   },
+   "calib": {
+    "bias": 0.0,
+    "mae": 0.0,
+    "median": 0.0,
+    "n": 58,
+    "r": 1.0,
+    "share": null
+   },
+   "pass_": true,
+   "valid": {
+    "bias": 0.0,
+    "mae": 0.0,
+    "median": 0.0,
+    "n": 29,
+    "r": 1.0,
+    "share": null
+   }
+  },
+  "light": {
+   "all": {
+    "bias": 1.448,
+    "mae": 16.069,
+    "median": 0.0,
+    "n": 87,
+    "r": 0.774,
+    "share": null
+   },
+   "calib": {
+    "bias": -1.966,
+    "mae": 15.69,
+    "median": -1.5,
+    "n": 58,
+    "r": 0.764,
+    "share": null
+   },
+   "pass_": true,
+   "valid": {
+    "bias": 8.276,
+    "mae": 16.828,
+    "median": 9.0,
+    "n": 29,
+    "r": 0.83,
+    "share": null
+   }
+  },
+  "need": {
+   "all": {
+    "bias": 1.402,
+    "mae": 8.667,
+    "median": 2.0,
+    "n": 87,
+    "r": 0.864,
+    "share": null
+   },
+   "calib": {
+    "bias": 1.552,
+    "mae": 8.621,
+    "median": 3.0,
+    "n": 58,
+    "r": 0.869,
+    "share": null
+   },
+   "pass_": true,
+   "valid": {
+    "bias": 1.103,
+    "mae": 8.759,
+    "median": 1.0,
+    "n": 29,
+    "r": 0.855,
+    "share": null
+   }
+  },
+  "onset": {
+   "all": {
+    "bias": 0.115,
+    "mae": 6.943,
+    "median": 0.0,
+    "n": 87,
+    "r": 0.974,
+    "share": 0.966
+   },
+   "calib": {
+    "bias": -1.017,
+    "mae": 6.466,
+    "median": -1.0,
+    "n": 58,
+    "r": 0.977,
+    "share": 0.983
+   },
+   "pass_": true,
+   "valid": {
+    "bias": 2.379,
+    "mae": 7.897,
+    "median": 3.0,
+    "n": 29,
+    "r": 0.973,
+    "share": 0.931
+   }
+  },
+  "recovery": {
+   "all": {
+    "bias": 1.264,
+    "mae": 3.862,
+    "median": 1.0,
+    "n": 87,
+    "r": 0.974,
+    "share": null
+   },
+   "calib": {
+    "bias": 0.707,
+    "mae": 3.603,
+    "median": 1.0,
+    "n": 58,
+    "r": 0.975,
+    "share": null
+   },
+   "pass_": true,
+   "valid": {
+    "bias": 2.379,
+    "mae": 4.379,
+    "median": 3.0,
+    "n": 29,
+    "r": 0.975,
+    "share": null
+   }
+  },
+  "rem": {
+   "all": {
+    "bias": -3.563,
+    "mae": 13.034,
+    "median": -4.0,
+    "n": 87,
+    "r": 0.532,
+    "share": null
+   },
+   "calib": {
+    "bias": -2.931,
+    "mae": 13.655,
+    "median": -4.5,
+    "n": 58,
+    "r": 0.516,
+    "share": null
+   },
+   "pass_": true,
+   "valid": {
+    "bias": -4.828,
+    "mae": 11.793,
+    "median": -4.0,
+    "n": 29,
+    "r": 0.546,
+    "share": null
+   }
+  },
+  "resp": {
+   "all": {
+    "bias": 0.017,
+    "mae": 0.291,
+    "median": 0.0,
+    "n": 87,
+    "r": 0.778,
+    "share": null
+   },
+   "calib": {
+    "bias": 0.045,
+    "mae": 0.259,
+    "median": 0.0,
+    "n": 58,
+    "r": 0.773,
+    "share": null
+   },
+   "pass_": true,
+   "valid": {
+    "bias": -0.038,
+    "mae": 0.355,
+    "median": 0.0,
+    "n": 29,
+    "r": 0.795,
+    "share": null
+   }
+  },
+  "rhr": {
+   "all": {
+    "bias": 0.292,
+    "mae": 1.051,
+    "median": 0.4,
+    "n": 87,
+    "r": 0.862,
+    "share": 1.0
+   },
+   "calib": {
+    "bias": 0.372,
+    "mae": 0.914,
+    "median": 0.6,
+    "n": 58,
+    "r": 0.902,
+    "share": 1.0
+   },
+   "pass_": false,
+   "valid": {
+    "bias": 0.131,
+    "mae": 1.324,
+    "median": 0.1,
+    "n": 29,
+    "r": 0.801,
+    "share": 1.0
+   }
+  },
+  "sleep_pct": {
+   "all": {
+    "bias": -0.322,
+    "mae": 2.23,
+    "median": 0.0,
+    "n": 87,
+    "r": 0.961,
+    "share": null
+   },
+   "calib": {
+    "bias": -0.466,
+    "mae": 1.948,
+    "median": -0.5,
+    "n": 58,
+    "r": 0.967,
+    "share": null
+   },
+   "pass_": true,
+   "valid": {
+    "bias": -0.034,
+    "mae": 2.793,
+    "median": 0.0,
+    "n": 29,
+    "r": 0.952,
+    "share": null
+   }
+  },
+  "strain": {
+   "all": {
+    "bias": -0.068,
+    "mae": 0.744,
+    "median": 0.1,
+    "n": 79,
+    "r": 0.962,
+    "share": null
+   },
+   "calib": {
+    "bias": -0.038,
+    "mae": 0.725,
+    "median": 0.1,
+    "n": 53,
+    "r": 0.955,
+    "share": null
+   },
+   "pass_": true,
+   "valid": {
+    "bias": -0.131,
+    "mae": 0.785,
+    "median": 0.1,
+    "n": 26,
+    "r": 0.971,
+    "share": null
+   }
+  },
+  "temp": {
+   "all": {
+    "bias": null,
+    "mae": null,
+    "median": null,
+    "n": 71,
+    "r": null,
+    "share": 0.915
+   },
+   "calib": {
+    "bias": null,
+    "mae": null,
+    "median": null,
+    "n": 44,
+    "r": null,
+    "share": 0.886
+   },
+   "pass_": true,
+   "valid": {
+    "bias": null,
+    "mae": null,
+    "median": null,
+    "n": 27,
+    "r": null,
+    "share": 0.963
+   }
+  },
+  "tst": {
+   "all": {
+    "bias": 7.598,
+    "mae": 8.931,
+    "median": 7.0,
+    "n": 87,
+    "r": 0.985,
+    "share": null
+   },
+   "calib": {
+    "bias": 8.224,
+    "mae": 9.224,
+    "median": 7.0,
+    "n": 58,
+    "r": 0.984,
+    "share": null
+   },
+   "pass_": true,
+   "valid": {
+    "bias": 6.345,
+    "mae": 8.345,
+    "median": 7.0,
+    "n": 29,
+    "r": 0.985,
+    "share": null
+   }
+  },
+  "wake": {
+   "all": {
+    "bias": -0.218,
+    "mae": 4.678,
+    "median": 0.0,
+    "n": 87,
+    "r": 0.995,
+    "share": 0.989
+   },
+   "calib": {
+    "bias": -1.103,
+    "mae": 5.0,
+    "median": -1.0,
+    "n": 58,
+    "r": 0.994,
+    "share": 0.983
+   },
+   "pass_": true,
+   "valid": {
+    "bias": 1.552,
+    "mae": 4.034,
+    "median": 0.0,
+    "n": 29,
+    "r": 0.996,
+    "share": 1.0
+   }
+  }
+ },
+ "preliminary": false,
+ "rec_zone_agree": 0.862,
+ "sleep_zone_agree": 0.874,
+ "valid_from": "2026-08-30"
+}

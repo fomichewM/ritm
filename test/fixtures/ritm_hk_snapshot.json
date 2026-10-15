@@ -1,0 +1,651 @@
+{
+ "available": true,
+ "nowMs": 1792057260000,
+ "vo2": [
+  {
+   "v": 44.1,
+   "s": 1785573000000,
+   "e": 1785573000000,
+   "src": {
+    "bundle": "com.apple.health.81C6F1D0-3B2A-4C55-9E2E-1A7C1F0B2D11",
+    "name": "Apple Watch — Михаил",
+    "product": "Watch6,4",
+    "model": "Watch"
+   }
+  },
+  {
+   "v": 44.6,
+   "s": 1786869000000,
+   "e": 1786869000000,
+   "src": {
+    "bundle": "com.apple.health.81C6F1D0-3B2A-4C55-9E2E-1A7C1F0B2D11",
+    "name": "Apple Watch — Михаил",
+    "product": "Watch6,4",
+    "model": "Watch"
+   }
+  },
+  {
+   "v": 45.0,
+   "s": 1788165000000,
+   "e": 1788165000000,
+   "src": {
+    "bundle": "com.apple.health.81C6F1D0-3B2A-4C55-9E2E-1A7C1F0B2D11",
+    "name": "Apple Watch — Михаил",
+    "product": "Watch6,4",
+    "model": "Watch"
+   }
+  },
+  {
+   "v": 45.3,
+   "s": 1789461000000,
+   "e": 1789461000000,
+   "src": {
+    "bundle": "com.apple.health.81C6F1D0-3B2A-4C55-9E2E-1A7C1F0B2D11",
+    "name": "Apple Watch — Михаил",
+    "product": "Watch6,4",
+    "model": "Watch"
+   }
+  },
+  {
+   "v": 45.8,
+   "s": 1790757000000,
+   "e": 1790757000000,
+   "src": {
+    "bundle": "com.apple.health.81C6F1D0-3B2A-4C55-9E2E-1A7C1F0B2D11",
+    "name": "Apple Watch — Михаил",
+    "product": "Watch6,4",
+    "model": "Watch"
+   }
+  },
+  {
+   "v": 46.2,
+   "s": 1792053000000,
+   "e": 1792053000000,
+   "src": {
+    "bundle": "com.apple.health.81C6F1D0-3B2A-4C55-9E2E-1A7C1F0B2D11",
+    "name": "Apple Watch — Михаил",
+    "product": "Watch6,4",
+    "model": "Watch"
+   }
+  }
+ ],
+ "spo2": [
+  {
+   "v": 0.97,
+   "s": 1792018800000,
+   "e": 1792018800000,
+   "src": {
+    "bundle": "com.apple.health.81C6F1D0-3B2A-4C55-9E2E-1A7C1F0B2D11",
+    "name": "Apple Watch — Михаил",
+    "product": "Watch6,4",
+    "model": "Watch"
+   }
+  },
+  {
+   "v": 0.96,
+   "s": 1792020600000,
+   "e": 1792020600000,
+   "src": {
+    "bundle": "com.apple.health.81C6F1D0-3B2A-4C55-9E2E-1A7C1F0B2D11",
+    "name": "Apple Watch — Михаил",
+    "product": "Watch6,4",
+    "model": "Watch"
+   }
+  },
+  {
+   "v": 0.95,
+   "s": 1792022400000,
+   "e": 1792022400000,
+   "src": {
+    "bundle": "com.apple.health.81C6F1D0-3B2A-4C55-9E2E-1A7C1F0B2D11",
+    "name": "Apple Watch — Михаил",
+    "product": "Watch6,4",
+    "model": "Watch"
+   }
+  },
+  {
+   "v": 0.96,
+   "s": 1792024200000,
+   "e": 1792024200000,
+   "src": {
+    "bundle": "com.apple.health.81C6F1D0-3B2A-4C55-9E2E-1A7C1F0B2D11",
+    "name": "Apple Watch — Михаил",
+    "product": "Watch6,4",
+    "model": "Watch"
+   }
+  },
+  {
+   "v": 0.97,
+   "s": 1792026000000,
+   "e": 1792026000000,
+   "src": {
+    "bundle": "com.apple.health.81C6F1D0-3B2A-4C55-9E2E-1A7C1F0B2D11",
+    "name": "Apple Watch — Михаил",
+    "product": "Watch6,4",
+    "model": "Watch"
+   }
+  },
+  {
+   "v": 0.96,
+   "s": 1792027800000,
+   "e": 1792027800000,
+   "src": {
+    "bundle": "com.apple.health.81C6F1D0-3B2A-4C55-9E2E-1A7C1F0B2D11",
+    "name": "Apple Watch — Михаил",
+    "product": "Watch6,4",
+    "model": "Watch"
+   }
+  },
+  {
+   "v": 0.94,
+   "s": 1792029600000,
+   "e": 1792029600000,
+   "src": {
+    "bundle": "com.apple.health.81C6F1D0-3B2A-4C55-9E2E-1A7C1F0B2D11",
+    "name": "Apple Watch — Михаил",
+    "product": "Watch6,4",
+    "model": "Watch"
+   }
+  },
+  {
+   "v": 0.96,
+   "s": 1792031400000,
+   "e": 1792031400000,
+   "src": {
+    "bundle": "com.apple.health.81C6F1D0-3B2A-4C55-9E2E-1A7C1F0B2D11",
+    "name": "Apple Watch — Михаил",
+    "product": "Watch6,4",
+    "model": "Watch"
+   }
+  },
+  {
+   "v": 0.97,
+   "s": 1792033200000,
+   "e": 1792033200000,
+   "src": {
+    "bundle": "com.apple.health.81C6F1D0-3B2A-4C55-9E2E-1A7C1F0B2D11",
+    "name": "Apple Watch — Михаил",
+    "product": "Watch6,4",
+    "model": "Watch"
+   }
+  },
+  {
+   "v": 0.96,
+   "s": 1792035000000,
+   "e": 1792035000000,
+   "src": {
+    "bundle": "com.apple.health.81C6F1D0-3B2A-4C55-9E2E-1A7C1F0B2D11",
+    "name": "Apple Watch — Михаил",
+    "product": "Watch6,4",
+    "model": "Watch"
+   }
+  },
+  {
+   "v": 0.95,
+   "s": 1792036800000,
+   "e": 1792036800000,
+   "src": {
+    "bundle": "com.apple.health.81C6F1D0-3B2A-4C55-9E2E-1A7C1F0B2D11",
+    "name": "Apple Watch — Михаил",
+    "product": "Watch6,4",
+    "model": "Watch"
+   }
+  },
+  {
+   "v": 0.96,
+   "s": 1792038600000,
+   "e": 1792038600000,
+   "src": {
+    "bundle": "com.apple.health.81C6F1D0-3B2A-4C55-9E2E-1A7C1F0B2D11",
+    "name": "Apple Watch — Михаил",
+    "product": "Watch6,4",
+    "model": "Watch"
+   }
+  },
+  {
+   "v": 0.98,
+   "s": 1792040400000,
+   "e": 1792040400000,
+   "src": {
+    "bundle": "com.apple.health.81C6F1D0-3B2A-4C55-9E2E-1A7C1F0B2D11",
+    "name": "Apple Watch — Михаил",
+    "product": "Watch6,4",
+    "model": "Watch"
+   }
+  },
+  {
+   "v": 0.96,
+   "s": 1792042200000,
+   "e": 1792042200000,
+   "src": {
+    "bundle": "com.apple.health.81C6F1D0-3B2A-4C55-9E2E-1A7C1F0B2D11",
+    "name": "Apple Watch — Михаил",
+    "product": "Watch6,4",
+    "model": "Watch"
+   }
+  },
+  {
+   "v": 0.97,
+   "s": 1792044000000,
+   "e": 1792044000000,
+   "src": {
+    "bundle": "com.apple.health.81C6F1D0-3B2A-4C55-9E2E-1A7C1F0B2D11",
+    "name": "Apple Watch — Михаил",
+    "product": "Watch6,4",
+    "model": "Watch"
+   }
+  },
+  {
+   "v": 0.96,
+   "s": 1792045800000,
+   "e": 1792045800000,
+   "src": {
+    "bundle": "com.apple.health.81C6F1D0-3B2A-4C55-9E2E-1A7C1F0B2D11",
+    "name": "Apple Watch — Михаил",
+    "product": "Watch6,4",
+    "model": "Watch"
+   }
+  },
+  {
+   "v": 0.91,
+   "s": 1792011600000,
+   "e": 1792011600000,
+   "src": {
+    "bundle": "com.apple.health.81C6F1D0-3B2A-4C55-9E2E-1A7C1F0B2D11",
+    "name": "Apple Watch — Михаил",
+    "product": "Watch6,4",
+    "model": "Watch"
+   }
+  },
+  {
+   "v": 0.9,
+   "s": 1792029600000,
+   "e": 1792029600000,
+   "src": {
+    "bundle": "com.ouraring.oura",
+    "name": "Oura",
+    "product": "iPhone15,2",
+    "model": ""
+   }
+  }
+ ],
+ "rhr": [
+  {
+   "v": 53,
+   "s": 1791961500000,
+   "e": 1791961500000,
+   "src": {
+    "bundle": "com.apple.health.81C6F1D0-3B2A-4C55-9E2E-1A7C1F0B2D11",
+    "name": "Apple Watch — Михаил",
+    "product": "Watch6,4",
+    "model": "Watch"
+   }
+  },
+  {
+   "v": 52,
+   "s": 1792022400000,
+   "e": 1792048320000,
+   "src": {
+    "bundle": "com.apple.health.81C6F1D0-3B2A-4C55-9E2E-1A7C1F0B2D11",
+    "name": "Apple Watch — Михаил",
+    "product": "Watch6,4",
+    "model": "Watch"
+   }
+  },
+  {
+   "v": 49,
+   "s": 1792047600000,
+   "e": 1792047600000,
+   "src": {
+    "bundle": "com.oporagroup.ritm",
+    "name": "Ритм",
+    "product": "iPhone15,2",
+    "model": ""
+   }
+  }
+ ],
+ "wristTemp": [
+  {
+   "v": 34.6,
+   "s": 1791162000000,
+   "e": 1791181800000,
+   "src": {
+    "bundle": "com.apple.health.81C6F1D0-3B2A-4C55-9E2E-1A7C1F0B2D11",
+    "name": "Apple Watch — Михаил",
+    "product": "Watch6,4",
+    "model": "Watch"
+   }
+  },
+  {
+   "v": 34.620000000000005,
+   "s": 1791248400000,
+   "e": 1791268200000,
+   "src": {
+    "bundle": "com.apple.health.81C6F1D0-3B2A-4C55-9E2E-1A7C1F0B2D11",
+    "name": "Apple Watch — Михаил",
+    "product": "Watch6,4",
+    "model": "Watch"
+   }
+  },
+  {
+   "v": 34.64,
+   "s": 1791334800000,
+   "e": 1791354600000,
+   "src": {
+    "bundle": "com.apple.health.81C6F1D0-3B2A-4C55-9E2E-1A7C1F0B2D11",
+    "name": "Apple Watch — Михаил",
+    "product": "Watch6,4",
+    "model": "Watch"
+   }
+  },
+  {
+   "v": 34.6,
+   "s": 1791421200000,
+   "e": 1791441000000,
+   "src": {
+    "bundle": "com.apple.health.81C6F1D0-3B2A-4C55-9E2E-1A7C1F0B2D11",
+    "name": "Apple Watch — Михаил",
+    "product": "Watch6,4",
+    "model": "Watch"
+   }
+  },
+  {
+   "v": 34.620000000000005,
+   "s": 1791507600000,
+   "e": 1791527400000,
+   "src": {
+    "bundle": "com.apple.health.81C6F1D0-3B2A-4C55-9E2E-1A7C1F0B2D11",
+    "name": "Apple Watch — Михаил",
+    "product": "Watch6,4",
+    "model": "Watch"
+   }
+  },
+  {
+   "v": 34.64,
+   "s": 1791594000000,
+   "e": 1791613800000,
+   "src": {
+    "bundle": "com.apple.health.81C6F1D0-3B2A-4C55-9E2E-1A7C1F0B2D11",
+    "name": "Apple Watch — Михаил",
+    "product": "Watch6,4",
+    "model": "Watch"
+   }
+  },
+  {
+   "v": 34.6,
+   "s": 1791680400000,
+   "e": 1791700200000,
+   "src": {
+    "bundle": "com.apple.health.81C6F1D0-3B2A-4C55-9E2E-1A7C1F0B2D11",
+    "name": "Apple Watch — Михаил",
+    "product": "Watch6,4",
+    "model": "Watch"
+   }
+  },
+  {
+   "v": 34.620000000000005,
+   "s": 1791766800000,
+   "e": 1791786600000,
+   "src": {
+    "bundle": "com.apple.health.81C6F1D0-3B2A-4C55-9E2E-1A7C1F0B2D11",
+    "name": "Apple Watch — Михаил",
+    "product": "Watch6,4",
+    "model": "Watch"
+   }
+  },
+  {
+   "v": 34.64,
+   "s": 1791853200000,
+   "e": 1791873000000,
+   "src": {
+    "bundle": "com.apple.health.81C6F1D0-3B2A-4C55-9E2E-1A7C1F0B2D11",
+    "name": "Apple Watch — Михаил",
+    "product": "Watch6,4",
+    "model": "Watch"
+   }
+  },
+  {
+   "v": 34.6,
+   "s": 1791939600000,
+   "e": 1791959400000,
+   "src": {
+    "bundle": "com.apple.health.81C6F1D0-3B2A-4C55-9E2E-1A7C1F0B2D11",
+    "name": "Apple Watch — Михаил",
+    "product": "Watch6,4",
+    "model": "Watch"
+   }
+  },
+  {
+   "v": 35.05,
+   "s": 1792026000000,
+   "e": 1792045800000,
+   "src": {
+    "bundle": "com.apple.health.81C6F1D0-3B2A-4C55-9E2E-1A7C1F0B2D11",
+    "name": "Apple Watch — Михаил",
+    "product": "Watch6,4",
+    "model": "Watch"
+   }
+  }
+ ],
+ "hrr": [
+  {
+   "v": 31,
+   "s": 1792052820000,
+   "e": 1792052820000,
+   "src": {
+    "bundle": "com.apple.health.81C6F1D0-3B2A-4C55-9E2E-1A7C1F0B2D11",
+    "name": "Apple Watch — Михаил",
+    "product": "Watch6,4",
+    "model": "Watch"
+   }
+  }
+ ],
+ "sleep": [
+  {
+   "v": 0,
+   "s": 1792019100000,
+   "e": 1792047600000,
+   "src": {
+    "bundle": "com.apple.health.5F2A0C77-90D1-4E0A-B9E3-7C2B6A1D4E00",
+    "name": "iPhone (Михаил)",
+    "product": "iPhone15,2",
+    "model": "iPhone"
+   }
+  },
+  {
+   "v": 3,
+   "s": 1792019520000,
+   "e": 1792025220000,
+   "src": {
+    "bundle": "com.apple.health.81C6F1D0-3B2A-4C55-9E2E-1A7C1F0B2D11",
+    "name": "Apple Watch — Михаил",
+    "product": "Watch6,4",
+    "model": "Watch"
+   }
+  },
+  {
+   "v": 4,
+   "s": 1792025220000,
+   "e": 1792028220000,
+   "src": {
+    "bundle": "com.apple.health.81C6F1D0-3B2A-4C55-9E2E-1A7C1F0B2D11",
+    "name": "Apple Watch — Михаил",
+    "product": "Watch6,4",
+    "model": "Watch"
+   }
+  },
+  {
+   "v": 3,
+   "s": 1792028220000,
+   "e": 1792031820000,
+   "src": {
+    "bundle": "com.apple.health.81C6F1D0-3B2A-4C55-9E2E-1A7C1F0B2D11",
+    "name": "Apple Watch — Михаил",
+    "product": "Watch6,4",
+    "model": "Watch"
+   }
+  },
+  {
+   "v": 5,
+   "s": 1792031820000,
+   "e": 1792034220000,
+   "src": {
+    "bundle": "com.apple.health.81C6F1D0-3B2A-4C55-9E2E-1A7C1F0B2D11",
+    "name": "Apple Watch — Михаил",
+    "product": "Watch6,4",
+    "model": "Watch"
+   }
+  },
+  {
+   "v": 2,
+   "s": 1792034220000,
+   "e": 1792035540000,
+   "src": {
+    "bundle": "com.apple.health.81C6F1D0-3B2A-4C55-9E2E-1A7C1F0B2D11",
+    "name": "Apple Watch — Михаил",
+    "product": "Watch6,4",
+    "model": "Watch"
+   }
+  },
+  {
+   "v": 3,
+   "s": 1792035540000,
+   "e": 1792039740000,
+   "src": {
+    "bundle": "com.apple.health.81C6F1D0-3B2A-4C55-9E2E-1A7C1F0B2D11",
+    "name": "Apple Watch — Михаил",
+    "product": "Watch6,4",
+    "model": "Watch"
+   }
+  },
+  {
+   "v": 4,
+   "s": 1792039740000,
+   "e": 1792041540000,
+   "src": {
+    "bundle": "com.apple.health.81C6F1D0-3B2A-4C55-9E2E-1A7C1F0B2D11",
+    "name": "Apple Watch — Михаил",
+    "product": "Watch6,4",
+    "model": "Watch"
+   }
+  },
+  {
+   "v": 5,
+   "s": 1792041540000,
+   "e": 1792044840000,
+   "src": {
+    "bundle": "com.apple.health.81C6F1D0-3B2A-4C55-9E2E-1A7C1F0B2D11",
+    "name": "Apple Watch — Михаил",
+    "product": "Watch6,4",
+    "model": "Watch"
+   }
+  },
+  {
+   "v": 3,
+   "s": 1792044840000,
+   "e": 1792047300000,
+   "src": {
+    "bundle": "com.apple.health.81C6F1D0-3B2A-4C55-9E2E-1A7C1F0B2D11",
+    "name": "Apple Watch — Михаил",
+    "product": "Watch6,4",
+    "model": "Watch"
+   }
+  }
+ ],
+ "ecg": [
+  {
+   "s": 1792054200000,
+   "e": 1792054230000,
+   "cls": "sinusRhythm",
+   "hr": 62.0,
+   "src": {
+    "bundle": "com.apple.NanoHeartRhythm",
+    "name": "ЭКГ",
+    "product": "Watch6,4",
+    "model": "Watch"
+   }
+  },
+  {
+   "s": 1791926100000,
+   "e": 1791926130000,
+   "cls": "atrialFibrillation",
+   "hr": 88.0,
+   "src": {
+    "bundle": "com.apple.NanoHeartRhythm",
+    "name": "ЭКГ",
+    "product": "Watch6,4",
+    "model": "Watch"
+   }
+  },
+  {
+   "s": 1791622800000,
+   "e": 1791622830000,
+   "cls": "inconclusivePoorReading",
+   "src": {
+    "bundle": "com.apple.NanoHeartRhythm",
+    "name": "ЭКГ",
+    "product": "Watch6,4",
+    "model": "Watch"
+   }
+  }
+ ],
+ "workouts": [
+  {
+   "uuid": "6A1F2B3C-4D5E-6F70-8192-A3B4C5D6E7F8",
+   "s": 1792050000000,
+   "e": 1792052760000,
+   "type": 37,
+   "dist": 7240.0,
+   "kcal": 512.0,
+   "src": {
+    "bundle": "com.apple.health.81C6F1D0-3B2A-4C55-9E2E-1A7C1F0B2D11",
+    "name": "Apple Watch — Михаил",
+    "product": "Watch6,4",
+    "model": "Watch"
+   },
+   "hrAvg": 146.3,
+   "hrMax": 158.0,
+   "hrN": 552,
+   "hrAfter": [
+    [
+     1792052765000,
+     158
+    ],
+    [
+     1792052780000,
+     149
+    ],
+    [
+     1792052800000,
+     136
+    ],
+    [
+     1792052820000,
+     127
+    ],
+    [
+     1792052850000,
+     121
+    ]
+   ]
+  },
+  {
+   "uuid": "11111111-2222-3333-4444-555555555555",
+   "s": 1792001100000,
+   "e": 1792003920000,
+   "type": 52,
+   "src": {
+    "bundle": "com.oporagroup.ritm",
+    "name": "Ритм",
+    "product": "iPhone15,2",
+    "model": ""
+   },
+   "hrAfter": []
+  }
+ ],
+ "steps": {
+  "all": 7840.0,
+  "watch": 7520.0,
+  "watchHours": 10
+ }
+}
