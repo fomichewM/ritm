@@ -67,20 +67,22 @@ class _RitmOnboardingState extends State<RitmOnboarding> {
       _Page(
         icon: LucideIcons.watch,
         title: 'Браслет',
+        lead: 'Ночь и восстановление «Ритм» считает по браслету WHOOP.',
         lines: const [
-          ('Подходит WHOOP 4.0, 5.0 и MG', 'Модель «Ритм» определит сам при подключении.'),
-          ('Ночь — с браслета', 'Сон, пульс покоя, ВСР и дыхание считаются по браслету — носите его ночью.'),
-          ('Прошивку не обновляйте', 'Обновление в приложении WHOOP может отключить чтение данных «Ритмом».'),
+          (LucideIcons.badgeCheck, 'WHOOP 4.0, 5.0 и MG', 'Модель «Ритм» определит сам.'),
+          (LucideIcons.moon, 'Носите ночью', 'Сон, пульс покоя, ВСР и дыхание — с браслета.'),
+          (LucideIcons.ban, 'Прошивку не обновляйте', 'Обновление в приложении WHOOP может закрыть чтение данных.'),
         ],
         action: RButton(LucideIcons.bluetooth, 'Найти браслет', onTap: () => go(c, const RitmBandScreen())),
       ),
       _Page(
         icon: LucideIcons.heartPulse,
         title: 'Здоровье',
+        lead: 'Днём точнее часы, ночью — браслет. «Ритм» берёт лучшее из обоих.',
         lines: const [
-          ('Только чтение', '«Ритм» читает из «Здоровья» шаги, тренировки и данные Apple Watch и пишет туда сон.'),
-          ('Apple Watch — днём', 'Тренировки и пульс днём точнее с часов. Ночью часы не нужны: ночь — с браслета.'),
-          ('Всё на телефоне', 'Пульс, ВСР и стресс не уходят с телефона никуда.'),
+          (LucideIcons.bookOpen, 'Читает', 'Шаги, тренировки и пульс Apple Watch из «Здоровья».'),
+          (LucideIcons.penLine, 'Пишет только сон', 'Остальное в «Здоровье» не меняется.'),
+          (LucideIcons.lock, 'Пульс и ВСР — на телефоне', 'На сервер «Ритма» они не уходят никогда.'),
         ],
         action: RButton(LucideIcons.shieldCheck, 'Разрешить доступ', onTap: _health),
         note: _healthNote,
@@ -88,10 +90,11 @@ class _RitmOnboardingState extends State<RitmOnboarding> {
       _Page(
         icon: LucideIcons.sparkles,
         title: 'Помощник',
+        lead: 'Ответит, почему сегодня так, и подскажет план. Необязательно — без него работает всё остальное.',
         lines: const [
-          ('Необязательно', 'Без ключа всё работает, кроме ответов помощника.'),
-          ('Свой ключ OpenAI', 'Ключ хранится в связке ключей телефона, запросы идут напрямую в OpenAI, не через наш сервер.'),
-          ('Что отправляется', 'Ваш вопрос и показатели, которые помощник запросит из базы на телефоне: сон, восстановление, нагрузка, пульс покоя, ВСР, тренировки. Сырой сигнал браслета не отправляется.'),
+          (LucideIcons.keyRound, 'Свой ключ', 'OpenAI или свой сервер (Ollama, LM Studio). Ключ — в связке ключей телефона.'),
+          (LucideIcons.send, 'Напрямую, не через нас', 'Уходят ваш вопрос и нужные показатели: сон, восстановление, нагрузка, пульс, ВСР, тренировки.'),
+          (LucideIcons.lock, 'Посекундные записи — нет', 'Записи браслета не отправляются.'),
         ],
         action: RButton(LucideIcons.keyRound, 'Указать ключ', onTap: () => go(c, const RitmAssistantSettings())),
       ),
@@ -168,34 +171,51 @@ class _RitmOnboardingState extends State<RitmOnboarding> {
 class _Page extends StatelessWidget {
   final IconData icon;
   final String title;
-  final List<(String, String)> lines;
+  final String lead;
+  final List<(IconData, String, String)> lines;
   final Widget action;
   final String? note;
-  const _Page({required this.icon, required this.title, required this.lines, required this.action, this.note});
+  const _Page({required this.icon, required this.title, required this.lead, required this.lines, required this.action, this.note});
 
   @override
   Widget build(BuildContext c) => ListView(
-    padding: const EdgeInsets.fromLTRB(16, 24, 16, 16),
+    padding: const EdgeInsets.fromLTRB(16, 8, 16, 16),
     children: [
-      Container(
-        width: 72,
-        height: 72,
-        alignment: Alignment.center,
-        decoration: BoxDecoration(color: RC.cardHi, borderRadius: BorderRadius.circular(RS.rCard)),
-        child: Icon(icon, size: 34, color: RC.brandA),
-      ),
+      SizedBox(height: 176, child: Center(child: _Hero(icon: icon))),
+      const SizedBox(height: 8),
+      Text(title, style: RT.h1, textAlign: TextAlign.center),
+      const SizedBox(height: 8),
+      Text(lead, style: RT.body.copyWith(color: RC.ink2), textAlign: TextAlign.center),
       const SizedBox(height: 20),
-      Text(title, style: RT.h1),
-      const SizedBox(height: 16),
       RCard(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             for (var i = 0; i < lines.length; i++) ...[
-              if (i > 0) const SizedBox(height: 14),
-              Text(lines[i].$1, style: RT.title),
-              const SizedBox(height: 4),
-              Text(lines[i].$2, style: RT.body),
+              if (i > 0) const SizedBox(height: 16),
+              Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Container(
+                    width: 36,
+                    height: 36,
+                    alignment: Alignment.center,
+                    decoration: BoxDecoration(color: RC.cardHi, borderRadius: BorderRadius.circular(10)),
+                    child: Icon(lines[i].$1, size: 18, color: RC.brandA),
+                  ),
+                  const SizedBox(width: 12),
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(lines[i].$2, style: RT.title),
+                        const SizedBox(height: 2),
+                        Text(lines[i].$3, style: RT.small.copyWith(color: RC.ink2)),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
             ],
           ],
         ),
@@ -205,4 +225,45 @@ class _Page extends StatelessWidget {
       if (note != null) ...[const SizedBox(height: 10), Text(note!, style: RT.small)],
     ],
   );
+}
+
+/// Заставка экрана онбординга: три кольца «Ритма» (сон, восстановление,
+/// нагрузка) вокруг значка шага — тот же язык, что на главной.
+class _Hero extends StatelessWidget {
+  final IconData icon;
+  const _Hero({required this.icon});
+
+  @override
+  Widget build(BuildContext c) => SizedBox(
+    width: 160,
+    height: 160,
+    child: CustomPaint(
+      painter: _RingsPainter(),
+      child: Center(child: Icon(icon, size: 44, color: RC.ink)),
+    ),
+  );
+}
+
+class _RingsPainter extends CustomPainter {
+  @override
+  void paint(Canvas canvas, Size size) {
+    final c = size.center(Offset.zero);
+    const rings = [(RC.sleepBlue, 76.0, .72), (RC.green, 62.0, .80), (RC.strain1, 48.0, .55)];
+    for (final (color, r, frac) in rings) {
+      final track = Paint()
+        ..style = PaintingStyle.stroke
+        ..strokeWidth = 9
+        ..color = RC.ringTrack;
+      final arc = Paint()
+        ..style = PaintingStyle.stroke
+        ..strokeWidth = 9
+        ..strokeCap = StrokeCap.round
+        ..color = color;
+      canvas.drawCircle(c, r, track);
+      canvas.drawArc(Rect.fromCircle(center: c, radius: r), -1.5708, 6.2832 * frac, false, arc);
+    }
+  }
+
+  @override
+  bool shouldRepaint(covariant CustomPainter old) => false;
 }

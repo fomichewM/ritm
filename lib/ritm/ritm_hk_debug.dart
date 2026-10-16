@@ -77,7 +77,7 @@ class RitmHkCheckScreen extends StatelessWidget {
           e.isEmpty
               ? ''
               : e.first.synthetic
-              ? 'синтетическая запись Swift: ЭКГ в «Здоровье» приложение записать не может'
+              ? 'синтетическая запись: ЭКГ в «Здоровье» приложение записать не может'
               : who(e.first.src),
         ));
         final wk = raw.workouts;

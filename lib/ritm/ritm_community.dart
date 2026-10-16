@@ -1415,7 +1415,7 @@ class _RitmCommunitySettingsState extends State<RitmCommunitySettings> {
       c,
       title: 'Удалить аккаунт?',
       text: 'С сервера сразу удалятся ваш профиль, итоги дней, реакции, согласие и участие во всех командах. '
-          'Данные браслета на этом телефоне останутся. Отменить нельзя.',
+          'Из резервных копий сервера — в течение 14 дней. Данные браслета на этом телефоне останутся. Отменить нельзя.',
       yes: 'Удалить',
     );
     if (!ok || widget.demoDelete) return;
@@ -1655,11 +1655,25 @@ class _ChatViewState extends State<_ChatView> {
                   controller: _scroll,
                   padding: const EdgeInsets.fromLTRB(16, 8, 16, 8),
                   itemCount: xs.length,
-                  itemBuilder: (_, i) => _Bubble(
-                    m: xs[i],
-                    first: i == 0 || xs[i - 1].userId != xs[i].userId,
-                    onDelete: xs[i].me && !xs[i].deleted ? () => _delete(xs[i]) : null,
-                  ),
+                  itemBuilder: (_, i) {
+                    final newDay = i == 0 || !_sameDay(xs[i - 1].at, xs[i].at);
+                    final bubble = _Bubble(
+                      m: xs[i],
+                      first: newDay || xs[i - 1].userId != xs[i].userId,
+                      onDelete: xs[i].me && !xs[i].deleted ? () => _delete(xs[i]) : null,
+                    );
+                    if (!newDay) return bubble;
+                    return Column(
+                      crossAxisAlignment: CrossAxisAlignment.stretch,
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.only(top: 6, bottom: 4),
+                          child: Center(child: Text(_dayLabel(xs[i].at), style: RT.micro.copyWith(color: RC.ink3))),
+                        ),
+                        bubble,
+                      ],
+                    );
+                  },
                 ),
         ),
         Container(
@@ -1714,6 +1728,21 @@ class _ChatViewState extends State<_ChatView> {
       ],
     );
   }
+}
+
+bool _sameDay(DateTime a, DateTime b) {
+  final x = a.toLocal(), y = b.toLocal();
+  return x.year == y.year && x.month == y.month && x.day == y.day;
+}
+
+/// Разделитель дня в чате: «Сегодня», «Вчера» или «12 окт».
+String _dayLabel(DateTime at) {
+  const months = ['янв', 'фев', 'мар', 'апр', 'мая', 'июн', 'июл', 'авг', 'сен', 'окт', 'ноя', 'дек'];
+  final now = _now();
+  final d = at.toLocal();
+  if (_sameDay(d, now)) return 'Сегодня';
+  if (_sameDay(d, now.subtract(const Duration(days: 1)))) return 'Вчера';
+  return '${d.day} ${months[d.month - 1]}';
 }
 
 class _Bubble extends StatelessWidget {

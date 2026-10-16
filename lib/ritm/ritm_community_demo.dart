@@ -316,10 +316,10 @@ class RitmDemoCommunityApi extends RitmCommunityApi {
 
       return [
         x(91, 3, 'Завтра в 7:00 у пруда, кто со мной? Темп спокойный, 8 км.', at(7, 58)),
-        x(92, 2, 'Я! Восстановление 84 %, можно и быстрее 😄', at(8, 3)),
+        x(92, 2, 'Я! Восстановление 84\u00a0%, можно и быстрее 😄', at(8, 3)),
         x(93, 4, 'Пропущу, вчера тяжёлая силовая, сегодня отдыхаю.', at(8, 15)),
         RMessage(id: 94, teamId: 11, userId: 5, name: 'Дмитрий', emoji: '⚽', deleted: true, at: at(8, 21)),
-        x(95, 1, 'Буду. Сон 89 %, нагрузка вчера 12,8 — пойду в зоне 2.', at(9, 2)),
+        x(95, 1, 'Буду. Сон 84\u00a0%, нагрузка вчера 12,8 — пойду в зоне 2.', at(9, 2)),
         x(96, 6, 'Отлично, тогда в 6:55 у входа в парк.', at(9, 20)),
       ];
     }(),
@@ -342,7 +342,7 @@ class RitmDemoCommunityApi extends RitmCommunityApi {
         name: 'Евгения',
         emoji: '🌸',
         text: 'Договорились, захвачу воду на всех 💧',
-        at: _now.add(const Duration(minutes: 1)),
+        at: _now,
       );
       _msgs[teamId]!.add(r);
       _chat.add((message: r, deletedId: null));

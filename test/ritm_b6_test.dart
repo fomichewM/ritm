@@ -186,10 +186,11 @@ void main() {
     expect(find.text('Прошивку не обновляйте'), findsOneWidget);
     await t.tap(find.byKey(const Key('onboard.next')));
     await t.pumpAndSettle();
-    expect(find.text('Apple Watch — днём'), findsOneWidget);
+    expect(find.text('Пишет только сон'), findsOneWidget);
     await t.tap(find.byKey(const Key('onboard.next')));
     await t.pumpAndSettle();
-    expect(find.text('Свой ключ OpenAI'), findsOneWidget);
+    expect(find.text('Свой ключ'), findsOneWidget);
+    expect(find.text('Посекундные записи — нет'), findsOneWidget);
     expect(find.text('НАЧАТЬ'), findsOneWidget);
     await t.tap(find.byKey(const Key('onboard.next')));
     await t.pumpAndSettle();
