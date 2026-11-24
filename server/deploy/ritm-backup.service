@@ -1,0 +1,6 @@
+[Unit]
+Description=Ritm nightly pg_dump (14 days)
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/sbin/ritm-backup.sh
